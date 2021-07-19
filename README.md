@@ -7,7 +7,7 @@ Minimal, portable, and local SmartWeave implementation
     - Read state from env
 - `smartest.writeContractState(contractId, state)`
     - Write state to env
-- `await smartest.interactWrite(arweave, contractSrc, wallet, contractInput, contractState, walletAddress, contractId)`
+- `await smartest.interactWrite(arweave, contractSrc, wallet, contractInput, contractState, walletAddress, contractId, contractOwner=null)`
     - Execute contract and write state to env
 
 ## Example
