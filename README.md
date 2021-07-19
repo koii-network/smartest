@@ -3,4 +3,4 @@ Minimal, portable, and local SmartWeave implementation
 
 ## Testing
 
-`node test.js`
+`node test path/to/wallet.json`
