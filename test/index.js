@@ -16,13 +16,13 @@ async function main() {
   const wallet = JSON.parse(fs.readFileSync(process.argv[2]));
   const walletAddress = await arweave.wallets.jwkToAddress(wallet);
 
-  // Load random contract
-  const randomSrc = fs.readFileSync(`test/random.js`, "utf8");
-  const randomContractId = "a1s2d3f4";
-  const randomInitState = JSON.parse(
-    fs.readFileSync(`test/random_init_state.json`)
+  // Load rng contract
+  const rngSrc = fs.readFileSync(`test/rng.js`, "utf8");
+  const rngContractId = "a1s2d3f4";
+  const rngInitState = JSON.parse(
+    fs.readFileSync(`test/rng_init_state.json`)
   );
-  smartest.writeContractState(randomContractId, randomInitState);
+  smartest.writeContractState(rngContractId, rngInitState);
 
   // Load tally contract
   const tallySrc = fs.readFileSync(`test/tally.js`, "utf8");
@@ -32,25 +32,25 @@ async function main() {
   );
   smartest.writeContractState(tallyContractId, tallyInitState);
 
-  const randomInput = {
+  const rngInput = {
     function: "generate"
   };
 
   const tallyInput = {
     function: "tally",
-    randomContractId: randomContractId
+    rngContractId: rngContractId
   };
 
-  for (let i = 0; i < 10; ++i) {
+  for (let i = 0; i < 5; ++i) {
     console.log("Pass", i);
     await smartest.interactWrite(
       arweave,
-      randomSrc,
+      rngSrc,
       wallet,
-      randomInput,
-      smartest.readContractState(randomContractId),
+      rngInput,
+      smartest.readContractState(rngContractId),
       walletAddress,
-      randomContractId
+      rngContractId
     );
 
     await smartest.interactWrite(

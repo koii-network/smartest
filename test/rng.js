@@ -8,7 +8,7 @@ export async function handle(state, action) {
   throw new ContractError(`Invalid function: "${action.input.function}"`);
 }
 
-// Generate a random number and store it in state.number
+// Generate a rng number and store it in state.number
 function generate(state, action) {
   state.number = Math.floor(Math.random() * Number.MAX_SAFE_INTEGER)
   return { state }
