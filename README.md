@@ -1,2 +1,6 @@
-# teststrand
-Minimal, portable, and local Arweave implementation
+# smartest
+Minimal, portable, and local SmartWeave implementation
+
+## Testing
+
+`node test.js`
