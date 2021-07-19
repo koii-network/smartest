@@ -1,5 +1,5 @@
 # smartest
-Minimal, portable, and local SmartWeave implementation
+Local SmartWeave simulation
 
 ## Usage
 
