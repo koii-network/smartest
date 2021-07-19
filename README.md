@@ -14,7 +14,7 @@ Minimal, portable, and local SmartWeave implementation
 
 ```js
 // import smartest
-const smartest = require("npm i @_koi/smartest");
+const smartest = require("@_koi/smartest");
 
 // set the initial state
 const tallyInitState = JSON.parse(
