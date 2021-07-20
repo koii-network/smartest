@@ -48,3 +48,7 @@ console.log(smartest.readContractState(tallyContractId));
 ## Testing
 
 `node test path/to/wallet.json`
+
+## Notes
+
+- Smartest is locked to SmartWeave `0.4.31` or earlier as later versions use `arweave.blocks.getCurrent()` in `interactWriteDryRun` which breaks `smartest`

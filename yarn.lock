@@ -176,7 +176,7 @@ articles@~0.2.1:
   resolved "https://registry.npmjs.org/articles/-/articles-0.2.2.tgz#cc6b429f8cfa811f41e7a08505abbb4e45503197"
   integrity sha512-S3Y4MPp+LD/l0HHm/4yrr6MoXhUkKT98ZdsV2tkTuBNywqUXEtvJT+NBO3KTSQEttc5EOwEJe2Xw8cZ9TI5Hrw==
 
-arweave@^1.10.13, arweave@^1.10.15:
+arweave@^1.10.11, arweave@^1.10.13, arweave@^1.10.15:
   version "1.10.15"
   resolved "https://registry.npmjs.org/arweave/-/arweave-1.10.15.tgz#c55d0c6f4eef60a4b89056976af411dcdffa83c8"
   integrity sha512-dzct71xkkuGIqb3Cp0HI6X9V+5AvhpCLO70MGawPZ5sZ7n1QUrTKeGuOfWOGGMZx4r4vXRxQg33PUiJScDmNhA==
@@ -1122,15 +1122,15 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-smartweave@^0.4.39:
-  version "0.4.39"
-  resolved "https://registry.npmjs.org/smartweave/-/smartweave-0.4.39.tgz#cd7fc1877c3a92f2b9abfb24b7bf8d35d10353e5"
-  integrity sha512-EKrcJCz3fNnrOvQk3x2+KqqhvdrOsK4COOY3ocLmKW4nfzEFPNL8HkmXgn1+JRxB296RuBrgBLCQKWa0XtvlAA==
+smartweave@0.4.31:
+  version "0.4.31"
+  resolved "https://registry.npmjs.org/smartweave/-/smartweave-0.4.31.tgz#d5647cdee11ca7a2ddaddd8384b8f46260d32727"
+  integrity sha512-DOW0AimcxnWGdcCPZm9hpAmwJ79uywcyLxu1HXPlWHEbwaN2TqYf4OgYMZTlHXVXXGk+m7PutUufgkx+Hv+fUQ==
   dependencies:
     "@types/clui" "^0.3.0"
     "@types/inquirer" "^7.3.1"
     "@weavery/clarity" "^0.1.5"
-    arweave "^1.10.15"
+    arweave "^1.10.11"
     bignumber.js "^9.0.1"
     chalk "^4.1.0"
     clui "^0.3.6"
